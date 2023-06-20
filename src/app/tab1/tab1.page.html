@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <div class="title">Student info</div>
+  </div>
+  
+  <div class="info-main">
+    <div class="form">
+      <label for="">Class</label>
+      <input type="text" name="" id="" [(ngModel)]="user.data.branch">
+      <label for="">Department</label>
+      <input type="text" name="" id="" [(ngModel)]="user.data.course">
+      <label for="">Marks</label>
+      <input type="text" name="" id="" [(ngModel)]="user.data.cgpa">
+      <label for="">Subject</label>
+      <input type="text" name="" id="" [(ngModel)]="user.data.skills">
+      <div class="btn" (click)="updateUser()" style="margin-left: 50px;">Submit</div>
+    </div>
+  </div>
+</ion-content>

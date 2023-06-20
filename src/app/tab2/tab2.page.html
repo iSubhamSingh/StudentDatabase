@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true" scrollbar-hidden>
+  <div class="header">
+    <div class="title">Student Info</div>
+  </div>
+  
+  <div class="feedback-main">
+    <div class="form">
+      
+      <label for="">Did you understood all the topics properly?</label>
+      <input type="text" name="" id="" [(ngModel)]="feedback.difficulty">
+      <label for="">Can you answer the questions in exam?</label>
+      <input type="text" name="" id="" [(ngModel)]="feedback.questions_answered">
+      <label for="">Rate the instructor?</label>
+      <input type="text" name="" id="" [(ngModel)]="feedback.time_sufficiency">
+      <label for="">Any other suggestion?</label>
+      <input type="text" name="" id="" [(ngModel)]="feedback.suggestions">
+      <div class="btn" (click)="submitFeedback()" style="margin-left: 50px;">Submit</div>
+    </div>
+  </div>
+</ion-content>
